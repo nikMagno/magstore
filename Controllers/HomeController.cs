@@ -27,6 +27,9 @@ namespace AppWeb.Controllers
         {
             return View();
         }
+        public IActionResult Sobre(){
+            return View();
+        }
 
         [Route("minhapagina")]
         public IActionResult MinhaPagina()

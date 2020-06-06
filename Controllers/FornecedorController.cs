@@ -32,18 +32,17 @@ namespace AppWeb.Controllers
         }
 
 
-      [HttpGet("Fornecedor/Editar/{id}")]
+			[HttpGet("Fornecedor/Editar/{id}")]
         public IActionResult Edit(int id)
         {
             FornecedorViewModel fornecedor;
             using (var conn = _conexao.AbrirConexao())
             {
-               var querySQL = $"SELECT IdFornecedor, Nome, Endereco from fornecedor where IdFornecedor = {id}";
+               var querySQL = $"SELECT idfornecedor, nome, endereco from fornecedor where idfornecedor = {id}";
                fornecedor = conn.QueryFirst<FornecedorViewModel>(querySQL);
             }
                 return View(fornecedor);
 
- 
         }
 
       [HttpPost("Fornecedor/Salvar")]
@@ -71,7 +70,7 @@ namespace AppWeb.Controllers
 
 				using (var conn = _conexao.AbrirConexao()){
 
-					var querySQL = $"Delete from fornecedor where IdFornecedor = {id};";
+					var querySQL = $"Delete from fornecedor where idFornecedor = {id};";
 					conn.Execute(querySQL);
 				}
 				return RedirectToAction("Index");
