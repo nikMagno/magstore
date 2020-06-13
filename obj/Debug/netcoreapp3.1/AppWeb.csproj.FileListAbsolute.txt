@@ -98,3 +98,4 @@ F:\projetos\projetos-faculdade\appWeb\obj\Debug\netcoreapp3.1\Razor\Views\Produt
 F:\projetos\projetos-faculdade\AppWeb\obj\Debug\netcoreapp3.1\Razor\Views\Fornecedor\New.cshtml.g.cs
 F:\projetos\projetos-faculdade\AppWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 F:\projetos\projetos-faculdade\AppWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\Sobre.cshtml.g.cs
+F:\projetos\projetos-faculdade\AppWeb\obj\Debug\netcoreapp3.1\Razor\Views\Login\UsuarioLogin.cshtml.g.cs

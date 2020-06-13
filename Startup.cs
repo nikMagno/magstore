@@ -24,6 +24,16 @@ namespace AppWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Configuração para criar os cookies
+            services.AddAuthentication("CookieAuthentication")
+            .AddCookie("CookieAuthentication", config =>
+            {
+                config.Cookie.Name = "UserLoginCookie";
+                config.LoginPath = "/Login/UsuarioLogin";
+                config.LogoutPath = "/Login/Logout";
+                // config.AccessDeniedPath = "/Login/AccessDenied";
+            });
+
             services.AddControllersWithViews();
 
             //Configurando a injeção da conexão
@@ -49,6 +59,10 @@ namespace AppWeb
 
             app.UseRouting();
 
+            //Quem é você
+            app.UseAuthentication();
+            
+            //Verifica Permissões 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

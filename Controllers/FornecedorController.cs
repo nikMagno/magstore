@@ -4,6 +4,7 @@ using System.Linq;
 using AppWeb.Models;
 using AppWeb.Repositorio;
 using Dapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppWeb.Controllers
@@ -19,6 +20,7 @@ namespace AppWeb.Controllers
         _conexao = conexao;
       }
 
+			[Authorize]
 			[HttpGet("Fornecedor/Listar")]
         public IActionResult Index()
         {

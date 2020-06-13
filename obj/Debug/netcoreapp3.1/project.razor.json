@@ -20531,6 +20531,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Login\\UsuarioLogin.cshtml",
+      "TargetPath": "Views\\Login\\UsuarioLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
