@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AppWeb.Repositorio;
+using MagStore.Connection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,7 +38,7 @@ namespace AppWeb
 
             //Configurando a injeção da conexão
             //Utilizando o padrão singleton para criar uma única conexão para a aplicação
-            services.AddSingleton<IConexao, Conexao>();
+            services.AddSingleton<IConnection, Connection>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

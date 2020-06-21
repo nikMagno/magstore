@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zn8p4Zl9tBpYwzFy47xTxvlixFLW64pLR6/izOhiB00BdtCgfeA62RfPE1HnPsdn/Pk2JNyWk6pksukbitc2KQ==",
+  "dgSpecHash": "xLxAR/yEXmX16cC1XZBhScrsOoh7zMmUzY5rgDORLMHvbEDv7k8I6yu9dhvNVTtjS1NN4rOnHEPVgc7WCDcwrg==",
   "success": true,
-  "projectFilePath": "F:\\projetos\\projetos-faculdade\\AppWeb\\AppWeb.csproj",
+  "projectFilePath": "F:\\projetos\\projetos-faculdade\\MagStore\\AppWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\N1kM\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\N1kM\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",

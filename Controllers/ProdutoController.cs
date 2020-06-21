@@ -1,22 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using AppWeb.Models;
-using AppWeb.Repositorio;
+using MagStore.Models;
+using MagStore.Connection;
 using Dapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppWeb.Controllers
+
+namespace MagStore.Controllers
 {
 	public class ProdutoController : Controller
 	{
 
 		List<ProdutoViewModel> listaProdutos;
-		private readonly IConexao _conexao;
+		private readonly IConnection _conexao;
 
 		//Construtor da Classe Controller
-		public ProdutoController(IConexao conexao){
+		public ProdutoController(IConnection conexao){
 			
 			_conexao = conexao;
 		}
@@ -25,7 +26,7 @@ namespace AppWeb.Controllers
 	[HttpGet("Produto/Listar")]
 			public IActionResult Index()
 			{
-					using (var conn = _conexao.AbrirConexao()){
+					using (var conn = _conexao.OpenConnection()){
 							
 							var querySQL = @"SELECT idproduto, Nome, Valor FROM produto;";
 							listaProdutos = conn.Query<ProdutoViewModel>(querySQL).ToList();
@@ -39,7 +40,7 @@ namespace AppWeb.Controllers
         public IActionResult Edit(int id)
         {
             ProdutoViewModel produto;
-            using (var conn = _conexao.AbrirConexao())
+            using (var conn = _conexao.OpenConnection())
             {
                var querySQL = $"SELECT idproduto, Nome, Valor from produto where idproduto = {id}";
                produto = conn.QueryFirst<ProdutoViewModel>(querySQL);
@@ -61,7 +62,7 @@ namespace AppWeb.Controllers
 							sql = @"Insert into produto(nome, valor) values(@nome, @valor);";
 					}
 
-					using (var conn = _conexao.AbrirConexao()){
+					using (var conn = _conexao.OpenConnection()){
 
 						conn.Execute(sql,model);
 					}
@@ -71,7 +72,7 @@ namespace AppWeb.Controllers
 
 			public IActionResult Delete(int id){
 
-				using (var conn = _conexao.AbrirConexao()){
+				using (var conn = _conexao.OpenConnection()){
 
 					var querySQL = $"Delete from produto where idproduto = {id};";
 					conn.Execute(querySQL);

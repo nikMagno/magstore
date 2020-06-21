@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using AppWeb.Models;
+using MagStore.Models;
 
-namespace AppWeb.Controllers
+namespace MagStore.Controllers
 {
     public class HomeController : Controller
     {

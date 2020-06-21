@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\projetos\\projetos-faculdade\\AppWeb\\AppWeb.csproj": {}
+    "F:\\projetos\\projetos-faculdade\\MagStore\\AppWeb.csproj": {}
   },
   "projects": {
-    "F:\\projetos\\projetos-faculdade\\AppWeb\\AppWeb.csproj": {
+    "F:\\projetos\\projetos-faculdade\\MagStore\\AppWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\projetos\\projetos-faculdade\\AppWeb\\AppWeb.csproj",
+        "projectUniqueName": "F:\\projetos\\projetos-faculdade\\MagStore\\AppWeb.csproj",
         "projectName": "AppWeb",
-        "projectPath": "F:\\projetos\\projetos-faculdade\\AppWeb\\AppWeb.csproj",
+        "projectPath": "F:\\projetos\\projetos-faculdade\\MagStore\\AppWeb.csproj",
         "packagesPath": "C:\\Users\\N1kM\\.nuget\\packages\\",
-        "outputPath": "F:\\projetos\\projetos-faculdade\\AppWeb\\obj\\",
+        "outputPath": "F:\\projetos\\projetos-faculdade\\MagStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\N1kM\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,5 +1,5 @@
 {
-  "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\AppWeb.csproj",
+  "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\AppWeb.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,83 +20521,83 @@
   "RootNamespace": "AppWeb",
   "Documents": [
     {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Fornecedor\\New.cshtml",
-      "TargetPath": "Views\\Fornecedor\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Produto\\Index.cshtml",
-      "TargetPath": "Views\\Produto\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Login\\UsuarioLogin.cshtml",
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Login\\UsuarioLogin.cshtml",
       "TargetPath": "Views\\Login\\UsuarioLogin.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Fornecedor\\Index.cshtml",
-      "TargetPath": "Views\\Fornecedor\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Produto\\Edit.cshtml",
-      "TargetPath": "Views\\Produto\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Home\\Sobre.cshtml",
-      "TargetPath": "Views\\Home\\Sobre.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Produto\\New.cshtml",
-      "TargetPath": "Views\\Produto\\New.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Home\\MinhaPagina.cshtml",
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Home\\MinhaPagina.cshtml",
       "TargetPath": "Views\\Home\\MinhaPagina.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Home\\Index.cshtml",
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Fornecedor\\Index.cshtml",
+      "TargetPath": "Views\\Fornecedor\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Produto\\Edit.cshtml",
+      "TargetPath": "Views\\Produto\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Produto\\Index.cshtml",
+      "TargetPath": "Views\\Produto\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Fornecedor\\New.cshtml",
+      "TargetPath": "Views\\Fornecedor\\New.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "f:\\projetos\\projetos-faculdade\\AppWeb\\Views\\Fornecedor\\Edit.cshtml",
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Produto\\New.cshtml",
+      "TargetPath": "Views\\Produto\\New.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Fornecedor\\Edit.cshtml",
       "TargetPath": "Views\\Fornecedor\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\projetos\\projetos-faculdade\\MagStore\\Views\\Home\\Sobre.cshtml",
+      "TargetPath": "Views\\Home\\Sobre.cshtml",
       "FileKind": "mvc"
     }
   ],

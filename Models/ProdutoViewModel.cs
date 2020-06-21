@@ -1,4 +1,4 @@
-namespace AppWeb.Models
+namespace MagStore.Models
 {
     public class ProdutoViewModel
     {

@@ -1,11 +1,11 @@
 using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace AppWeb.Repositorio
+namespace MagStore.Connection
 {
-  public class Conexao : IConexao
+  public class Connection : IConnection
   {
-    public IDbConnection AbrirConexao()
+    public IDbConnection OpenConnection()
     {
       using(MySqlConnection conn = new MySqlConnection("Server=magstore.mysql.database.azure.com; Port=3306; Database=magstore; Uid=nikolasmagno@magstore; Pwd=Magno-10231993; SslMode=Preferred;")){
           

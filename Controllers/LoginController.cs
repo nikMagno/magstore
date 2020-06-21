@@ -1,20 +1,20 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using AppWeb.Models;
-using AppWeb.Repositorio;
+using MagStore.Models;
+using MagStore.Connection;
 using Dapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppWeb.Controllers
+namespace MagStore.Controllers
 {
     public class LoginController : Controller
     {
-      private readonly IConexao _conexao; //underline indica uma variável global.
-      public LoginController(IConexao conexao)
+      private readonly IConnection _connection; //underline indica uma variável global.
+      public LoginController(IConnection connection)
       {
-          _conexao = conexao;
+          _connection = connection;
       }
 
       [HttpGet]
@@ -29,7 +29,7 @@ namespace AppWeb.Controllers
         UsuarioViewModel usuario = null;
 
         //
-        using(var conn = _conexao.AbrirConexao()){
+        using(var conn = _connection.OpenConnection()){
           string queryQuery = $"select * from usuario where login = '{model.Login}' and senha = '{model.Senha}'; ";
           usuario = conn.QueryFirst<UsuarioViewModel>(queryQuery);
         }

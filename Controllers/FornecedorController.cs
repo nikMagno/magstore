@@ -1,30 +1,30 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using AppWeb.Models;
-using AppWeb.Repositorio;
+using MagStore.Models;
+using MagStore.Connection;
 using Dapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppWeb.Controllers
+namespace MagStore.Controllers
 {
     public class FornecedorController : Controller
     {
 			List<FornecedorViewModel> listaFornecedor;
 
-      private readonly IConexao _conexao;
+      private readonly IConnection _connection;
 
 			//Construtor da Classe Controller
-      public FornecedorController(IConexao conexao){
-        _conexao = conexao;
+      public FornecedorController(IConnection connection){
+        _connection = connection;
       }
 
 			[Authorize]
 			[HttpGet("Fornecedor/Listar")]
         public IActionResult Index()
         {
-            using (var conn = _conexao.AbrirConexao()){
+            using (var conn = _connection.OpenConnection()){
               
               var querySQL = @"SELECT idFornecedor, Nome, Endereco FROM fornecedor;";
               listaFornecedor = conn.Query<FornecedorViewModel>(querySQL).ToList();
@@ -38,7 +38,7 @@ namespace AppWeb.Controllers
         public IActionResult Edit(int id)
         {
             FornecedorViewModel fornecedor;
-            using (var conn = _conexao.AbrirConexao())
+            using (var conn = _connection.OpenConnection())
             {
                var querySQL = $"SELECT idfornecedor, nome, endereco from fornecedor where idfornecedor = {id}";
                fornecedor = conn.QueryFirst<FornecedorViewModel>(querySQL);
@@ -60,7 +60,7 @@ namespace AppWeb.Controllers
 							sql = @"Insert into fornecedor(nome, endereco) values(@nome, @endereco);";
 					}
 
-					using (var conn = _conexao.AbrirConexao()){
+					using (var conn = _connection.OpenConnection()){
 
 						conn.Execute(sql,model);
 					}
@@ -70,7 +70,7 @@ namespace AppWeb.Controllers
 
 			public IActionResult Delete(int id){
 
-				using (var conn = _conexao.AbrirConexao()){
+				using (var conn = _connection.OpenConnection()){
 
 					var querySQL = $"Delete from fornecedor where idFornecedor = {id};";
 					conn.Execute(querySQL);

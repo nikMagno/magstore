@@ -1,6 +1,6 @@
 using System;
 
-namespace AppWeb.Models
+namespace MagStore.Models
 {
     public class ErrorViewModel
     {
